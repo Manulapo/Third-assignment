@@ -7,19 +7,18 @@
         var firstLetter = names[i].charAt(0).toLowerCase();
 
         if (firstLetter === 'j') {
-            function byeSpeaker () {
-                var bye = "Goodbye"
-                console.log( bye + " " + names[i])
+            function byeSpeaker (name) {
+                console.log("Goodbye " + name)
             }   
-            console.log(byeSpeaker(names[i]));
+            byeSpeaker(names[i]);
         
         } else {
-            function helloSpeaker (){
-                var hello = "Hello"
-                console.log( hello + " " + names[i])
+            function helloSpeaker (name){
+                console.log("Hello " + name)
             }
-            console.log(helloSpeaker(names[i]));   
+            helloSpeaker(names[i]);   
         }
     }
     
 })();
+
